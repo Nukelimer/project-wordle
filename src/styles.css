@@ -48,7 +48,7 @@ button {
 
 header {
   display: flex;
-  height: var(--header-height);
+  height: fit-content;
   border-bottom: 1px solid var(--color-gray-700);
   color: var(--color-gray-300);
 }
@@ -60,15 +60,13 @@ header .side {
 }
 
 h1 {
-  flex: 1;
-  font-size: 2rem;
-  line-height: var(--header-height);
-  text-align: center;
+  font-size: 1.85rem;
+ 
 }
 
 @media (max-width: 25rem) {
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.85rem;
   }
 }
 
@@ -218,6 +216,60 @@ h1 {
 .modal-title {
   margin-bottom: 0.5em;
 }
+
+.form {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  box-shadow: inset;
+  height: 400px;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_continue {
+  background: green;
+  margin-top: 6rem;
+  padding: 0.6rem 4rem;
+  color: white;
+}
+
+.disable_btn{
+  opacity: 0.4;
+  background: yellowgreen;
+  color: black;
+}
+
+.game_height{
+  height: 60vh;
+}
+
+
+.flex_column{
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1rem;
+ ;
+  text-align: center;
+}
+
+.blur{
+
+  opacity: 0.4;
+}
+
+
+
+
+
+
+
+
+
 
 /*
   Keyframe animations

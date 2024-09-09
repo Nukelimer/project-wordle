@@ -1,13 +1,15 @@
+import { useState } from 'react';
 import Game from '../Game';
 import Header from '../Header';
 
 function App() {
+  const [singleCountry, setsingleCountry] = useState("");
   return (
     <div className="wrapper">
-      <Header />
+      <Header setsingleCountry={setsingleCountry} singleCountry={singleCountry}/>
 
       <div className="game-wrapper">
-        <Game />
+        <Game setsingleCountry={setsingleCountry} singleCountry={singleCountry}/>
       </div>
     </div>
   );

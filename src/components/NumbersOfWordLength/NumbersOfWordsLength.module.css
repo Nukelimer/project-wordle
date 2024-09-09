@@ -1,0 +1,68 @@
+/* SelectCategories.module.css */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000; 
+}
+
+.formContainer {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  z-index: 1001; 
+  background: white; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+
+.text_size {
+  font-size: larger;
+  margin-left: .6rem;
+}
+
+.radioContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.radioInput {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-right: 10px;
+}
+
+.radioInput:checked {
+  background-color: green;
+  border-color: green;
+}
+
+.radioLabel {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.radioLabel:hover {
+  color: green;
