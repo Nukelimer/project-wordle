@@ -8,8 +8,10 @@ function WonBanner({ numberOfGuess }) {
         <p>
           <strong>Congratulations!</strong> Got it in
           <strong>
-            {' '}
-            {numberOfGuess === 1 ? "1 attempt" : 'after ' + numberOfGuess + " guesses"}
+            {" "}
+            {numberOfGuess === 1
+              ? "1 attempt"
+              : "after " + numberOfGuess + " guesses"}
           </strong>
           .
         </p>
